@@ -3,11 +3,9 @@ package com.example.listview_with_image;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
 public class ListviewActivity extends Activity {
-    private ArrayList<Listviewitem> data=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +14,7 @@ public class ListviewActivity extends Activity {
 
         ListView listView=(ListView)findViewById(R.id.listview);
 
-        data=new ArrayList<Listviewitem>();
+        ArrayList<Listviewitem> data=new ArrayList<Listviewitem>();
         Listviewitem lion=new Listviewitem(R.drawable.lion,"Lion");
         Listviewitem tiger=new Listviewitem(R.drawable.tiger,"Tiger");
         Listviewitem dog=new Listviewitem(R.drawable.dog,"Dog");
